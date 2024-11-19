@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Animais - PetShop Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Animais</h1>
+  <form id="animalForm">
+    <label for="nome">Nome do Animal:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age" required>
+    
+    <label for="type">Tipo:</label>
+    <input type="text" id="type" name="type" required>
+    
+    <label for="owner">Dono:</label>
+    <select id="owner" name="owner" required></select> <!-- Select para listar os clientes -->
+    
+    <button type="submit">Salvar Animal</button>
+    <button><a href="clientes.html">Página de usuários</a></button>
+  </form>
+  
+  <h2>Lista de Animais</h2>
+  <div id="listaAnimais"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
